@@ -16,7 +16,7 @@ An in-depth paragraph about your project and overview of use.
 
 Clone FracReconNet repository
 ```
-https://github.com/DanupongBu/FracReconNet
+git clone https://github.com/DanupongBu/FracReconNet
 ```
 
 ### Executing program (Demo)
