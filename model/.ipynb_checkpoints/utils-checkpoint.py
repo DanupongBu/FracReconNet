@@ -51,7 +51,7 @@ class FemurDataset(Dataset):            # build torch.utils.data.Dataset class
         if torch.is_tensor(idx):
             idx = idx.tolist()
         
-        target = np.load(os.path.join(self.root_dir, self.files_frame.iloc[idx,1]))  # Intensity[n,0] or Mask[n,1]
+        target = None                                    #np.load(os.path.join(self.root_dir, self.files_frame.iloc[idx,1]))  # Intensity[n,0] or Mask[n,1]
         view1 = np.load(os.path.join(self.root_dir, self.files_frame.iloc[idx,2]))
         view2 = np.load(os.path.join(self.root_dir, self.files_frame.iloc[idx,3]))
         drr1_name = self.files_frame.iloc[idx,2]
@@ -71,8 +71,7 @@ class NormalizeSample(object):
     """
     def __call__(self, sample):
         target, view1, view2 = sample['Target'], sample['view1'], sample['view2']
-        #intensity = np.float32(voxel/4096)       # for Intensity voxel
-        target = np.float32(target)               # for Mask voxel
+        target = np.zeros((256,256,256))
         view1 = np.float32(view1)
         view2 = np.float32(view2)
         return { 'Target':target , 'view1':view1 , 'view2':view2 }
@@ -127,7 +126,7 @@ class ToTensor2(object):
                 [50] = comminute
         Output: Positive non-zeros class in same channel which have label = 0,1  except pelvic volume
         Output classes = {0==background+fracture  1==femurMask}
-        ToTensor9 is deployed with classes: FemurDataSet2 and NormalizeSample2
+        ToTensor is deployed with classes: FemurDataSet and NormalizeSample
     """
     def __call__(self, sample):        # callable classes
         #print('### ToTensor2 ###')
