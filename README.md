@@ -39,6 +39,7 @@ command to run if program contains helper info
 - Pairat Tangpornprasert
 - Chanyaphan Virulsri
 - Thanarat Chalidabhongse
+
 Center of Excellence for Prosthetic and Orthopedic Implant and
 Perceptual Intelligent Computing Lab, Department of Computer Engineering
 Applied Digital Technology in Medicine Research Group
@@ -49,12 +50,9 @@ danupong.b@hotmail.com
 
 
 ## Version History
-
-* 0.1
-    * Initial Release
+* Initial Release
 
 ## License
-
 This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
 
 ## Acknowledgments
