@@ -7,8 +7,7 @@ To reconstruct of 3D femoral fracture bone from biplanar radiographs for utilizi
 
 ### Dependencie
 * Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-* Jupyter-lab is recommended to run the program with K3D visualization libraries compatibility
+* Jupyter-lab is recommended to run the program with K3D libraries compatibility
 
 ### Installation
 
@@ -17,12 +16,10 @@ Clone FracReconNet repository
 git clone https://github.com/DanupongBu/FracReconNet
 ```
 
-### Executing program (Demo)
-
-* How to run the program
-* Step-by-step bullets
+### Executing program
+Step-by-step following 
 ```
-Following Demo.ipynb step-by-step
+Demo.ipynb
 ```
 
 ## Authors
