@@ -1,7 +1,7 @@
 # Fracture Reconstruction Network
 
 To reconstruct of 3D femoral fracture bone from biplanar radiographs for utilizing to diagnosis and surgical planning
-![3D Reconstruction Results](reconstructed_result.gif)
+![3D Reconstruction Results](assets/reconstructed_result.gif)
 
 ## Getting Started
 
